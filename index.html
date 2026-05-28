@@ -9,22 +9,166 @@
   <meta property="og:site_name" content="Agent Marketing Desk">
   <meta property="og:title" content="Agent Marketing Desk · Newsletter">
   <meta property="og:description" content="Weekly marketing wins, agent features, and resources from Agent Marketing Desk.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/05-may/2026-05-28/assets/images/og.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/brand/logo-horizontal.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Roboto', system-ui, sans-serif; color: #111; background: #F8F8F8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px; text-align: center; }
-    .logo { width: 220px; max-width: 80%; margin-bottom: 28px; }
-    h1 { font-size: 32px; font-weight: 900; margin-bottom: 12px; letter-spacing: -0.01em; }
-    p { color: #555; font-size: 16px; line-height: 1.6; max-width: 480px; margin-bottom: 28px; }
-    a.btn { display: inline-block; padding: 14px 28px; background: #B40101; color: #FFF; font-weight: 700; text-decoration: none; border-radius: 4px; letter-spacing: 0.04em; text-transform: uppercase; font-size: 13px; }
+
+    body {
+      font-family: 'Roboto', system-ui, sans-serif;
+      color: #111111;
+      background: #F8F8F8;
+      min-height: 100vh;
+      padding: 60px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .logo {
+      width: 200px;
+      max-width: 80%;
+      margin-bottom: 24px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.6;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .divider {
+      width: 100%;
+      max-width: 560px;
+      border: none;
+      border-top: 1px solid #E0E0E0;
+      margin-bottom: 32px;
+    }
+
+    .issues-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 16px;
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .issues-list {
+      width: 100%;
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* ─── ADD NEW ISSUES HERE ───────────────────────────────────────────────
+       Copy one .issue-row block below and update the href and date text.
+       Newest issue goes at the top of the list.
+       Href format: /issues/YYYY-MM-DD
+    ─────────────────────────────────────────────────────────────────────── */
+
+    a.issue-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border: 1px solid #E8E8E8;
+      border-radius: 6px;
+      padding: 18px 22px;
+      text-decoration: none;
+      color: #111111;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    a.issue-row:hover {
+      border-color: #B40101;
+      box-shadow: 0 2px 8px rgba(180, 1, 1, 0.08);
+    }
+
+    .issue-date {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .issue-cta {
+      font-size: 13px;
+      font-weight: 700;
+      color: #B40101;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+
+    .footer-cta {
+      margin-top: 48px;
+    }
+
+    a.btn {
+      display: inline-block;
+      padding: 13px 26px;
+      background: #B40101;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
     a.btn:hover { background: #8A0000; }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 22px; }
+      .issue-date { font-size: 15px; }
+    }
   </style>
 </head>
 <body>
-  <img class="logo" src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/brand/logo-horizontal.png" alt="Agent Marketing Desk">
-  <h1>AMD Newsletter</h1>
-  <p>Marketing wins, agent features, and resources from Agent Marketing Desk. Each issue is shareable at <code>newsletter.brokermarketingdesk.com/&lt;date&gt;</code>.</p>
-  <a class="btn" href="https://agentmarketingdesk.com">Visit Agent Marketing Desk</a>
+
+  <div class="header">
+    <img class="logo" src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/brand/logo-horizontal.png" alt="Agent Marketing Desk">
+    <h1>AMD Newsletter</h1>
+    <p class="subtitle">Marketing wins, agent features, and resources. Sent weekly to real estate agents and teams.</p>
+  </div>
+
+  <hr class="divider">
+
+  <p class="issues-label">Past Issues</p>
+
+  <div class="issues-list">
+
+    <!-- ADD NEW ISSUES HERE — newest first. Copy a row block, update href and date. -->
+
+    <a class="issue-row" href="/issues/2026-05-28">
+      <span class="issue-date">May 28, 2026</span>
+      <span class="issue-cta">Read issue &rarr;</span>
+    </a>
+
+  </div>
+
+  <div class="footer-cta">
+    <a class="btn" href="https://agentmarketingdesk.com">Visit Agent Marketing Desk</a>
+  </div>
+
 </body>
 </html>
