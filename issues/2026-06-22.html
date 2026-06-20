@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>June 22, 2026 Newsletter · Agent Marketing Desk</title>
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Agent Marketing Desk">
+  <meta property="og:title" content="June 22, 2026 Newsletter · Agent Marketing Desk">
+  <meta property="og:description" content="Marketing wins, agent features, and resources from Agent Marketing Desk.">
+  <meta property="og:url" content="https://newsletter.brokermarketingdesk.com/issues/2026-06-22">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="June 22, 2026 Newsletter · Agent Marketing Desk">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/og.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ─── Reset ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #F2F2F2;
+      font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #111111;
+      -webkit-text-size-adjust: 100%;
+      line-height: 1.5;
+    }
+    img { border: 0; display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Brand Tokens ────────────────────────────────
+       --red:   #B40101   primary brand
+       --black: #111111   text & dark surfaces
+       --paper: #FFFFFF   container
+       --bg:    #F2F2F2   page bg
+       --line:  #E6E6E6   dividers
+       --muted: #707070   secondary text
+    ───────────────────────────────────────────────────*/
+
+    /* ─── Layout ─────────────────────────────────────── */
+    .wrap { width: 100%; background-color: #F2F2F2; padding: 24px 16px; }
+    .container { max-width: 640px; margin: 0 auto; background-color: #FFFFFF; }
+    .browser-bar { max-width: 640px; margin: 0 auto 12px; text-align: center; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #707070; }
+    .browser-bar a { color: #B40101; font-weight: 700; text-decoration: underline; }
+
+    /* ─── Header ─────────────────────────────────────── */
+    .hdr { padding: 32px 40px 24px; text-align: center; border-bottom: 4px solid #B40101; }
+    .hdr-logo { display: block; margin: 0 auto 14px; }
+    .hdr-logo img { height: 64px; width: auto; max-width: 360px; margin: 0 auto; display: block; }
+    .hdr-date { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: #707070; }
+
+    /* ─── Eyebrow ─────────────────────────────────────── */
+    .eyebrow { font-size: 11px; font-weight: 900; letter-spacing: 0.22em; text-transform: uppercase; color: #B40101; }
+
+    /* ─── Lead Hero ──────────────────────────────────── */
+    .lead { padding: 0; }
+    .lead-image-wrap { width: 100%; background-color: #111111; }
+    .lead-image-wrap img { width: 100%; display: block; }
+    .lead-image-fallback { aspect-ratio: 16 / 9; background-color: #111111; display: flex; align-items: center; justify-content: center; }
+    .lead-image-fallback::after { content: ""; display: block; width: 56px; height: 4px; background-color: #B40101; }
+    .lead-body { padding: 36px 40px 40px; text-align: center; }
+    .lead-body .eyebrow { margin-bottom: 16px; display: inline-block; }
+    .lead-body h1 { font-family: inherit; font-size: 30px; font-weight: 900; line-height: 1.2; color: #111111; margin-bottom: 14px; letter-spacing: -0.01em; }
+    .lead-body p { font-size: 15px; line-height: 1.65; color: #444444; margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+    /* ─── Buttons ──────────────────────────────────────
+       Solid red is the primary AMD CTA, matches the
+       buttons in every existing newsletter.
+    ────────────────────────────────────────────────────*/
+    .btn { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px 32px; border-radius: 4px; }
+    .btn-red    { background-color: #B40101; color: #FFFFFF; }
+    .btn-black  { background-color: #111111; color: #FFFFFF; }
+    .btn-ghost  { border: 2px solid #111111; color: #111111; padding: 12px 30px; }
+
+    /* ─── Section divider rule (red) ─────────────────── */
+    .rule { width: 56px; height: 3px; background-color: #B40101; margin: 0 auto 18px; border: 0; }
+
+    /* ─── Workshop / Event ───────────────────────────── */
+    .workshop { background-color: #111111; padding: 44px 40px; text-align: center; }
+    .workshop .eyebrow { color: #B40101; margin-bottom: 14px; display: inline-block; }
+    .workshop h2 { font-size: 26px; font-weight: 900; color: #FFFFFF; line-height: 1.25; margin-bottom: 14px; letter-spacing: -0.01em; }
+    .workshop p { font-size: 15px; line-height: 1.65; color: #B8B8B8; margin-bottom: 22px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .workshop ul { list-style: none; padding: 0; margin: 0 auto 22px; max-width: 440px; text-align: left; }
+    .workshop ul li { font-size: 14px; line-height: 1.6; color: #DCDCDC; padding: 8px 0 8px 24px; position: relative; border-bottom: 1px solid #2A2A2A; }
+    .workshop ul li:last-child { border-bottom: none; }
+    .workshop ul li::before { content: ""; position: absolute; left: 0; top: 16px; width: 12px; height: 2px; background-color: #B40101; }
+    .workshop-meta { padding: 18px 24px; background-color: rgba(200,37,30,0.08); border-left: 3px solid #B40101; max-width: 460px; margin: 0 auto 22px; text-align: left; }
+    .workshop-meta-row { font-size: 13px; color: #FFFFFF; line-height: 1.7; }
+    .workshop-meta-row strong { color: #B40101; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; font-size: 11px; display: inline-block; min-width: 70px; }
+
+    /* ─── Section (generic) ───────────────────────────── */
+    .sec { padding: 44px 40px; text-align: center; border-bottom: 1px solid #E6E6E6; }
+    .sec .eyebrow { margin-bottom: 14px; display: inline-block; }
+    .sec h2 { font-size: 26px; font-weight: 900; line-height: 1.25; color: #111111; margin-bottom: 14px; letter-spacing: -0.01em; }
+    .sec > p { font-size: 15px; line-height: 1.65; color: #444444; margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+    /* ─── Workshop image (top of workshop block) ────── */
+    .workshop-image { max-width: 480px; margin: 0 auto 28px; border-radius: 6px; overflow: hidden; }
+    .workshop-image img { width: 100%; height: auto; display: block; }
+
+    /* ─── Featured Work (client photo shoots etc.) ──── */
+    .featured-work { padding: 48px 40px; border-bottom: 1px solid #E6E6E6; text-align: center; background-color: #FFFFFF; }
+    .featured-work-head { max-width: 520px; margin: 0 auto 28px; }
+    .featured-work-head .eyebrow { display: inline-block; margin-bottom: 14px; }
+    .featured-work-head h2 { font-size: 26px; font-weight: 900; line-height: 1.25; color: #111111; margin-bottom: 12px; letter-spacing: -0.01em; }
+    .featured-work-head p { font-size: 15px; line-height: 1.65; color: #444444; }
+    .featured-work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 540px; margin: 0 auto 16px; }
+    .featured-work-grid.solo { grid-template-columns: 1fr; max-width: 420px; }
+    .featured-work-grid img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    .featured-work-credit { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #707070; margin-bottom: 22px; }
+    .featured-work-cta { margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .featured-work-cta .btn { display: inline-block; }
+    .featured-work-video { max-width: 420px; margin: 0 auto 22px; border-radius: 6px; overflow: hidden; background-color: #111111; }
+    .featured-work-video-thumb { width: 100%; aspect-ratio: 4 / 5; background-color: #111111; background-size: cover; background-position: 22% top; background-repeat: no-repeat; overflow: hidden; }
+    .featured-work-video-thumb table { width: 100%; height: 100%; }
+
+    /* ─── Website feature ─────────────────────────────── */
+    .website-feature { padding: 48px 40px; border-bottom: 1px solid #E6E6E6; text-align: center; background-color: #FFFFFF; }
+    .website-feature-head { max-width: 520px; margin: 0 auto 28px; }
+    .website-feature-head .eyebrow { display: inline-block; margin-bottom: 14px; }
+    .website-feature-head h2 { font-size: 26px; font-weight: 900; line-height: 1.25; color: #111111; margin-bottom: 12px; letter-spacing: -0.01em; }
+    .website-feature-head p { font-size: 15px; line-height: 1.65; color: #444444; }
+    .website-feature-portrait { max-width: 280px; margin: 0 auto 24px; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.10); }
+    .website-feature-portrait img { width: 100%; height: auto; display: block; }
+    .website-feature-portrait-caption { text-align: center; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #707070; margin: -12px auto 26px; font-weight: 700; }
+    .website-feature-preview { max-width: 560px; margin: 0 auto 22px; border: 1px solid #E6E6E6; border-radius: 6px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+    .website-feature-preview img { width: 100%; height: auto; display: block; }
+    .website-feature-url { font-size: 13px; letter-spacing: 0.04em; color: #707070; margin-bottom: 20px; word-break: break-all; }
+    .website-feature-url a { color: #B40101; text-decoration: none; font-weight: 700; }
+    .website-feature-services, .services-callout { max-width: 560px; margin: 8px auto 24px; padding: 22px 24px; background-color: #F8F8F8; border: 1px solid #E6E6E6; border-radius: 6px; text-align: left; }
+    .website-feature-services-headline, .services-callout-headline { font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; color: #B40101; font-weight: 700; margin-bottom: 12px; text-align: center; }
+    .website-feature-services p, .services-callout p { font-size: 14px; line-height: 1.65; color: #333333; margin: 0 0 10px; }
+    .website-feature-services p:last-child, .services-callout p:last-child { margin-bottom: 0; }
+    .website-feature-cta { margin-top: 4px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .website-feature-cta .btn { display: inline-block; }
+
+    /* ─── Video card (2-column: image left, body right) ── */
+    .video-card { max-width: 600px; margin: 0 auto; background-color: #F8F8F8; border: 1px solid #E6E6E6; border-radius: 6px; overflow: hidden; text-align: left; }
+    .video-card-table { width: 100%; border-collapse: collapse; }
+    .video-thumb-cell { width: 45%; vertical-align: middle; padding: 0; }
+    .video-body-cell { width: 55%; vertical-align: middle; padding: 22px 24px; }
+    .video-thumb { width: 100%; aspect-ratio: 9 / 16; background-color: #111111; background-size: cover; background-position: center top; background-repeat: no-repeat; overflow: hidden; }
+    .video-thumb table { width: 100%; height: 100%; }
+    .video-thumb-play { display: inline-block; border: 0; width: 64px; height: 64px; max-width: 64px; opacity: 0.95; }
+    .video-body { }
+    .video-title { font-size: 18px; font-weight: 900; line-height: 1.3; color: #111111; margin-bottom: 8px; }
+    .video-desc { font-size: 14px; line-height: 1.6; color: #555555; margin-bottom: 16px; }
+    .video-cta-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .video-cta-row .btn { display: inline-block; }
+
+    /* ─── Products ──────────────────────────────────────
+       Generated dynamically; see scripts/generate.sh.
+    ─────────────────────────────────────────────────────*/
+    .product { padding: 44px 40px; border-bottom: 1px solid #E6E6E6; text-align: left; }
+    .product .eyebrow { margin-bottom: 18px; display: inline-block; }
+    .product-grid { display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: center; }
+    .product-img { width: 200px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 4px; }
+    .product-img img { width: 100%; height: 100%; object-fit: cover; }
+    .product-body h3 { font-size: 22px; font-weight: 900; color: #111111; line-height: 1.25; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .product-body p { font-size: 14px; line-height: 1.6; color: #555555; margin-bottom: 12px; }
+    .product-price { font-size: 13px; font-weight: 700; letter-spacing: 0.05em; color: #B40101; text-transform: uppercase; margin-bottom: 18px; }
+
+    /* ─── From the Blog (article reference) ──────────── */
+    .blog-feature { padding: 48px 40px; border-bottom: 1px solid #E6E6E6; text-align: center; background-color: #F8F8F8; }
+    .blog-feature .eyebrow { display: inline-block; margin-bottom: 16px; }
+    .blog-feature-image { max-width: 540px; margin: 0 auto 24px; }
+    .blog-feature-image img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    .blog-feature h2 { font-size: 24px; font-weight: 900; line-height: 1.25; color: #111111; margin-bottom: 12px; letter-spacing: -0.01em; max-width: 540px; margin-left: auto; margin-right: auto; }
+    .blog-feature p { font-size: 15px; line-height: 1.65; color: #444444; margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+    /* ─── Google Reviews (social-proof strip) ────────── */
+    .reviews-strip { padding: 28px 40px; background-color: #111111; text-align: center; border-bottom: 1px solid #E6E6E6; }
+    .reviews-strip-line { display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .reviews-google-icon { width: 24px; height: 24px; vertical-align: middle; }
+    .reviews-strip .stars { color: #FFC107; font-size: 18px; letter-spacing: 0.05em; vertical-align: middle; }
+    .reviews-strip .rating { font-weight: 900; color: #FFFFFF; font-size: 18px; vertical-align: middle; }
+    .reviews-strip .label { color: #FFFFFF; font-size: 14px; vertical-align: middle; }
+    .reviews-strip .meta { color: #B0B0B0; font-size: 12px; letter-spacing: 0.04em; margin-top: 8px; display: block; }
+    .reviews-strip .cta { color: #FFFFFF; font-weight: 700; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 2px solid #B40101; padding-bottom: 1px; margin-left: 6px; }
+
+    /* ─── Testimonial ──────────────────────────────────
+       Photo on left, pull-quote and attribution on right.
+    ────────────────────────────────────────────────────*/
+    .testimonial { padding: 48px 40px; border-bottom: 1px solid #E6E6E6; background-color: #FFFFFF; }
+    .testimonial-rule { width: 56px; height: 3px; background-color: #B40101; margin: 0 auto 28px; }
+    .testimonial-content { display: flex; gap: 28px; align-items: flex-start; max-width: 580px; margin: 0 auto; }
+    .testimonial-photo { flex: 0 0 160px; }
+    .testimonial-photo img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; display: block; }
+    .testimonial-body { flex: 1; text-align: left; }
+    .testimonial-quote { font-size: 19px; font-weight: 500; line-height: 1.5; color: #111111; margin: 0 0 18px; letter-spacing: -0.005em; }
+    .testimonial-quote::before { content: '"'; }
+    .testimonial-quote::after { content: '"'; }
+    .testimonial-attribution { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #707070; margin-bottom: 14px; }
+    .testimonial-attribution strong { color: #111111; }
+    .testimonial-cta a { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #B40101; border-bottom: 2px solid #B40101; padding-bottom: 2px; text-decoration: none; }
+
+    /* ─── Marketing Office Hour (permanent) ──────────── */
+    .moh { padding: 40px 40px; border-bottom: 1px solid #E6E6E6; background-color: #000000; text-align: center; }
+    .moh-image { max-width: 480px; margin: 0 auto 24px; }
+    .moh-image img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    .moh-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: #B40101; margin-bottom: 12px; display: inline-block; }
+    .moh-title { font-size: 26px; font-weight: 900; color: #FFFFFF; line-height: 1.25; margin-bottom: 8px; letter-spacing: -0.01em; }
+    .moh-tagline { font-size: 17px; font-weight: 700; letter-spacing: 0.02em; color: #FFFFFF; margin-bottom: 20px; }
+    .moh-intro { font-size: 14px; line-height: 1.65; color: #C8C8C8; max-width: 460px; margin: 0 auto 12px; }
+    .moh-host { font-size: 12px; color: #888888; margin-bottom: 22px; letter-spacing: 0.04em; }
+
+    /* ─── Open House Signs (permanent fixture) ───────── */
+    .ohs { padding: 48px 40px; border-bottom: 1px solid #E6E6E6; text-align: center; background-color: #F8F8F8; }
+    .ohs-title { font-size: 26px; font-weight: 900; color: #111111; margin-bottom: 4px; letter-spacing: -0.01em; }
+    .ohs-tagline { font-size: 12px; color: #707070; letter-spacing: 0.05em; margin-bottom: 22px; }
+    .ohs-grid { display: flex; flex-direction: column; gap: 12px; max-width: 560px; margin: 0 auto 24px; }
+    .ohs-grid img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    .ohs-desc { font-size: 14px; line-height: 1.6; color: #444444; max-width: 480px; margin: 0 auto 22px; }
+    .ohs-pricing { max-width: 480px; margin: 0 auto 22px; padding: 18px 20px; background-color: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 6px; }
+    .ohs-pricing-title { font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: #B40101; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #E6E6E6; }
+    .ohs-pricing-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #E6E6E6; font-size: 13px; }
+    .ohs-pricing-row:last-child { border-bottom: none; }
+    .ohs-pricing-tier { color: #333333; font-weight: 500; }
+    .ohs-pricing-price { background-color: #111111; color: #FFFFFF; font-weight: 700; padding: 4px 12px; border-radius: 3px; font-size: 11px; letter-spacing: 0.04em; }
+
+    /* ─── Pricing tiers ───────────────────────────────── */
+    .pricing { padding: 36px 40px; border-bottom: 1px solid #E6E6E6; }
+    .pricing-title { font-size: 11px; font-weight: 900; letter-spacing: 0.22em; text-transform: uppercase; color: #B40101; text-align: center; margin-bottom: 8px; }
+    .pricing-sub { text-align: center; font-size: 22px; font-weight: 900; color: #111111; margin-bottom: 22px; letter-spacing: -0.01em; }
+    .pricing-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #E6E6E6; font-size: 14px; }
+    .pricing-row:last-child { border-bottom: none; }
+    .pricing-tier { color: #333333; font-weight: 500; }
+    .pricing-price { background-color: #111111; color: #FFFFFF; font-weight: 700; padding: 6px 14px; border-radius: 3px; font-size: 12px; letter-spacing: 0.04em; }
+    .pricing-cta { text-align: center; margin-top: 24px; }
+
+    /* ─── Team ────────────────────────────────────────── */
+    .team-section { padding: 48px 40px; background-color: #F8F8F8; border-bottom: 1px solid #E6E6E6; text-align: center; }
+    .team-section .eyebrow { margin-bottom: 14px; display: inline-block; }
+    .team-section h2 { font-size: 26px; font-weight: 900; color: #111111; line-height: 1.25; margin-bottom: 14px; letter-spacing: -0.01em; }
+    .team-section .lede { font-size: 15px; line-height: 1.65; color: #444444; margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 540px; margin: 0 auto; }
+    .team-card { text-align: center; }
+    .team-avatar { width: 88px; height: 88px; margin: 0 auto 12px; overflow: hidden; border-radius: 50%; background-color: #E6E6E6; }
+    .team-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+    .team-name { font-size: 13px; font-weight: 900; color: #111111; margin-bottom: 2px; letter-spacing: -0.01em; }
+    .team-role { font-size: 11px; color: #707070; line-height: 1.4; }
+
+    /* ─── Resource library (black on red header) ─────── */
+    .resources { background-color: #111111; padding: 48px 40px; }
+    .resources-head { text-align: center; margin-bottom: 28px; }
+    .resources-head .eyebrow { color: #FFFFFF; font-size: 22px; letter-spacing: 0.08em; font-weight: 900; }
+    .resources-head h2 { color: #FFFFFF; font-size: 26px; font-weight: 900; line-height: 1.25; margin-top: 12px; letter-spacing: -0.01em; }
+    .resource-cols { max-width: 540px; margin: 0 auto; }
+    .resource-item { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #2A2A2A; gap: 12px; }
+    .resource-item:last-child { border-bottom: none; }
+    .resource-label { font-size: 14px; color: #FFFFFF; font-weight: 500; }
+    .resource-arrow { font-size: 18px; color: #B40101; font-weight: 700; }
+
+    /* ─── Social bar ──────────────────────────────────── */
+    .social { padding: 32px 40px; text-align: center; border-bottom: 1px solid #E6E6E6; background-color: #FFFFFF; }
+    .social-label { font-size: 10px; font-weight: 900; letter-spacing: 0.28em; text-transform: uppercase; color: #707070; margin-bottom: 16px; }
+    .social-icons a { display: inline-block; margin: 0 6px; width: 36px; height: 36px; line-height: 0; }
+    .social-icons img { width: 36px; height: 36px; display: block; }
+
+    /* ─── Footer ──────────────────────────────────────── */
+    .ftr { background-color: #FFFFFF; padding: 32px 40px; text-align: center; }
+    .ftr-logo img { height: 36px; width: auto; max-width: 200px; margin: 0 auto 14px; }
+    .ftr-tag { font-size: 11px; color: #707070; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; margin-bottom: 18px; }
+    .ftr-contact { font-size: 12px; color: #555555; line-height: 1.7; margin-bottom: 20px; }
+    .ftr-contact a { color: #B40101; font-weight: 600; }
+    .ftr-divider { border: 0; border-top: 1px solid #E6E6E6; margin: 0 auto 18px; max-width: 280px; }
+    .ftr-legal { font-size: 10px; color: #999999; line-height: 1.7; }
+    .ftr-legal a { color: #707070; }
+
+    /* ─── Responsive ──────────────────────────────────── */
+    @media (max-width: 600px) {
+      .hdr, .lead-body, .sec, .workshop, .product, .pricing, .team-section, .resources, .social, .ftr { padding-left: 22px !important; padding-right: 22px !important; }
+      .lead-body h1 { font-size: 24px !important; }
+      .sec h2, .workshop h2, .team-section h2, .resources-head h2 { font-size: 22px !important; }
+      .product-grid { grid-template-columns: 1fr !important; }
+      .product-img { width: 100% !important; aspect-ratio: 16/9 !important; }
+      .team-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .workshop-meta-row strong { display: block !important; }
+      .testimonial-content { flex-direction: column !important; align-items: center !important; text-align: center !important; }
+      .testimonial-body { text-align: center !important; }
+      .video-thumb-cell, .video-body-cell { display: block !important; width: 100% !important; padding: 0 !important; }
+      .video-body-cell { padding: 22px 24px !important; }
+      .video-thumb { aspect-ratio: 4 / 5 !important; }
+      .video-thumb td { height: auto !important; padding-bottom: 24px !important; vertical-align: bottom !important; }
+      .featured-work-video-cta-row { flex-direction: column !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+<div class="browser-bar">
+  Trouble viewing this email? <a href="https://newsletter.brokermarketingdesk.com/issues/2026-06-22" target="_blank" rel="noopener">View in browser</a>
+</div>
+<div class="container">
+
+  <!-- ═══ HEADER ═══════════════════════════════════════ -->
+  <div class="hdr">
+    <div class="hdr-logo">
+      <a href="https://agentmarketingdesk.com" style="display:inline-block; text-decoration:none;" target="_blank" rel="noopener">
+        <img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/brand/logo-horizontal.png" alt="Agent Marketing Desk">
+      </a>
+    </div>
+    <div class="hdr-date">June 22, 2026 Newsletter</div>
+  </div>
+
+  <!-- ═══ LEAD ═════════════════════════════════════════ -->
+  <div class="lead" style="display: none;">
+    <div class="lead-image-wrap">
+      <img src="" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="lead-body">
+      <span class="eyebrow"></span>
+      <h1></h1>
+      <p></p>
+      <a href="" class="btn btn-red" target="_blank" rel="noopener"></a>
+    </div>
+  </div>
+
+  <!-- ═══ VIDEO (lead this issue) ═════════════════════ -->
+  <div class="sec" style="display: block;">
+    <span class="eyebrow">AMD × Velanka Antao</span>
+    <h2>We produced this video with Velanka Antao</h2>
+    <p>We partnered with KW Southwest agent Velanka Antao to produce her new video from start to finish.</p>
+    <div class="video-card">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="video-card-table">
+        <tr>
+          <td class="video-thumb-cell">
+            <a href="https://www.instagram.com/p/DZNOBZERjMP/" style="display:block; text-decoration:none;" target="_blank" rel="noopener">
+              <div class="video-thumb" style="background-image:url('https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/velanka-video-thumb.jpg');">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; height:100%;">
+                  <tr>
+                    <td background="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/velanka-video-thumb.jpg" bgcolor="#111111" align="center" valign="middle" style="background-image:url('https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/velanka-video-thumb.jpg'); background-size:cover; background-position:center top; background-repeat:no-repeat; height:480px;">
+                      <img src="https://img.icons8.com/ios-filled/100/FFFFFF/play-button-circled.png" width="64" height="64" alt="Play" class="video-thumb-play">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </a>
+          </td>
+          <td class="video-body-cell">
+            <div class="video-body">
+              <div class="video-title">Velanka Antao<br>KW Southwest</div>
+              <div class="video-desc">Produced end-to-end for Velanka Antao of KW Southwest. The kind of video work we make for our agents.</div>
+              <div class="video-cta-row">
+                <a href="https://www.instagram.com/p/DZNOBZERjMP/" class="btn btn-red" target="_blank" rel="noopener">Watch the Video</a>
+                
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══ WORKSHOP ═════════════════════════════════════ -->
+  <div class="workshop" style="display: block;">
+    <a href="https://www.instagram.com/p/DZn2ssNgSSH/" style="display:block; text-decoration:none;" target="_blank" rel="noopener"><div class="featured-work-video-thumb" style="background-image:url('https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/class-image.png'); background-position:center;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; height:100%;"><tr><td background="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/class-image.png" bgcolor="#111111" align="center" valign="middle" style="background-image:url('https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/class-image.png'); background-size:cover; background-position:center; background-repeat:no-repeat; height:520px;"><img src="https://img.icons8.com/ios-filled/100/FFFFFF/play-button-circled.png" width="72" height="72" alt="Play" class="video-thumb-play"></td></tr></table></div></a>
+    <span class="eyebrow">AMD × KW Signature</span>
+    <h2>5 Steps to Attract Your Ideal Clients</h2>
+    <p>We had a marketing session at KW Signature on the 5 steps to attract your ideal clients.</p>
+    
+    
+    <a href="https://www.instagram.com/p/DZn2ssNgSSH/" class="btn btn-red" target="_blank" rel="noopener">See Instagram Post</a>
+  </div>
+
+  <!-- ═══ FEATURED WORK 2 (Shawn / video BTS, with play button) ═══ -->
+  <div class="featured-work" style="display: block;">
+    <div class="featured-work-head">
+      <span class="eyebrow">AMD × CW Ross</span>
+      <h2>Behind the Scenes with CW Ross</h2>
+      <p>Behind the scenes of our video shoot with CW Ross.</p>
+    </div>
+    <div class="featured-work-video">
+      <a href="https://youtube.com/shorts/5OsbSNxzzOs?si=ZLzhwzsr-B_fy-l-" style="display:block; text-decoration:none;" target="_blank" rel="noopener">
+        <div class="featured-work-video-thumb" style="background-image:url('https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/cw-ross-cover.png');">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; height:100%;">
+            <tr>
+              <td background="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/cw-ross-cover.png" bgcolor="#111111" align="center" valign="middle" style="background-image:url('https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/cw-ross-cover.png'); background-size:cover; background-position:22% top; background-repeat:no-repeat; height:520px;">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/play-button-circled.png" width="72" height="72" alt="Play" class="video-thumb-play">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </a>
+    </div>
+    <div class="featured-work-credit"></div>
+    <div class="services-callout">
+      <div class="services-callout-headline">Video Production for Agents and Brokerages</div>
+      <p>We produce videos start to finish: concept, scripting, shoot, edit, and delivery. Vertical short-form for Instagram and Reels, listing walk-throughs, brand videos, agent stories, and more.</p>
+      <p>Built for where buyers actually look. Each video is optimized for Instagram, YouTube, and your website so your name shows up where your clients are scrolling.</p>
+    </div>
+    <div class="featured-work-cta">
+      <a href="https://youtube.com/shorts/5OsbSNxzzOs?si=ZLzhwzsr-B_fy-l-" class="btn btn-red" target="_blank" rel="noopener">Watch the Video</a>
+      <a href="https://youtube.com/shorts/x2J_6bR1UNc?si=d3wnjAN0UswNAGMQ" class="btn btn-black" target="_blank" rel="noopener">Watch One of His Videos</a>
+    </div>
+  </div>
+
+  <!-- ═══ WEBSITE FEATURE (website + logo) ═══ -->
+  <div class="website-feature" style="display: block;">
+    <div class="website-feature-head">
+      <span class="eyebrow">AMD × Roberta Meggs</span>
+      <h2>New website for Roberta Meggs</h2>
+      <p>Roberta Meggs, a REALTOR with Keller Williams Southwest serving Fort Bend County and the Greater Houston area, wanted a website that reflected how she serves her clients. We designed and built her new site from the ground up. We also produced her professional brand photo shoot, including the photos featured here.</p>
+    </div>
+    <div class="website-feature-portrait">
+      <img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/roberta-staircase.webp" alt="Roberta Meggs · KW Southwest">
+    </div>
+    <div class="website-feature-portrait-caption">Roberta Meggs · KW Southwest</div>
+    <div class="website-feature-preview">
+      <a href="https://www.robertameggs.com" style="display:block; text-decoration:none;" target="_blank" rel="noopener">
+        <img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/roberta-website.png" alt="New website for Roberta Meggs">
+      </a>
+    </div>
+    <div class="website-feature-url"><a href="https://www.robertameggs.com" target="_blank" rel="noopener">www.robertameggs.com</a></div>
+    <div class="website-feature-services">
+      <div class="website-feature-services-headline">Website and Logo Services for Agents and Brokerages</div>
+      <p>Every website we build includes lead capture forms, testimonials, automations, dedicated community pages, vendor lists, and more.</p>
+      <p>Future-proof by design. Roberta's site is written with specific language and clear structure so AI search assistants can read and understand exactly what she offers.</p>
+    </div>
+    <div class="website-feature-cta">
+      <a href="https://www.robertameggs.com" class="btn btn-red" target="_blank" rel="noopener">Visit the Website</a>
+      
+    </div>
+  </div>
+
+  <!-- ═══ FEATURED WORK 3 ═══════════════════════════════ -->
+  <div class="featured-work" style="display: block;">
+    <div class="featured-work-head">
+      <span class="eyebrow">AMD × Raul Arriondo</span>
+      <h2>Professional bifolds for the Arriondo Group</h2>
+      <p>We designed and printed professional bifolds for Raul Arriondo and the Arriondo Group at KW Signature.</p>
+    </div>
+    <div class="featured-work-grid solo">
+      <img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/raul-arriondo-bifolds.jpg" alt="Raul Arriondo holding professional bifold brochures designed by AMD for the Arriondo Group">
+    </div>
+    <div class="featured-work-credit"></div>
+    <div class="services-callout">
+      <div class="services-callout-headline">Print Marketing for Agents and Brokerages</div>
+      <p>We design and print custom marketing materials for agents and teams: bifolds, brochures, flyers, signs, and more.</p>
+    </div>
+    
+  </div>
+
+  <!-- ═══ FEATURED WORK 4 ═════════════════════════════ -->
+  <div class="featured-work" style="display: block;">
+    <div class="featured-work-head">
+      <span class="eyebrow">AMD × Raquel Forero</span>
+      <h2>Behind the Scenes with the Forero Realty Group</h2>
+      <p>Behind the scenes from our photo shoot with Raquel Forero and the Forero Realty Group at KW Houston Central.</p>
+    </div>
+    <div class="featured-work-grid">
+      <img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/raquel-bts-2.jpg" alt="Behind the scenes photographing the Forero Realty Group on the staircase"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/raquel-bts-1.jpg" alt="Behind the scenes: Raquel Forero reviewing shots on the camera"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/raquel-portrait.jpg" alt="Raquel Forero, finished portrait from the shoot">
+    </div>
+    <div class="featured-work-credit"></div>
+    <div class="featured-work-cta"><a href="https://www.instagram.com/realtor_raquel/" class="btn btn-red" target="_blank" rel="noopener">Follow Raquel</a><a href="https://www.instagram.com/forerorealtygroup/" class="btn btn-black" target="_blank" rel="noopener">Follow Forero Realty Group</a></div>
+  </div>
+
+  <!-- ═══ FEATURED WORK ═══════════════════════════════ -->
+  <div class="featured-work" style="display: block;">
+    <div class="featured-work-head">
+      <span class="eyebrow">AMD × Lily Rouhani</span>
+      <h2>Behind the Scenes with Lily</h2>
+      <p>Behind the scenes from our recent photo shoot with Lily Rouhani.</p>
+    </div>
+    <div class="featured-work-grid">
+      <img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/behind-the-scenes-lily-1.jpg" alt="Behind the scenes with Lily Rouhani at our photo shoot"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/behind-the-scenes-lily-3.jpg" alt="Behind the scenes with Lily Rouhani at our photo shoot">
+    </div>
+    <div class="featured-work-credit"></div>
+    <div class="featured-work-cta"><a href="https://www.instagram.com/p/DZyAZ0ykx3Y/?img_index=1" class="btn btn-red" target="_blank" rel="noopener">See Instagram Post</a></div>
+  </div>
+
+  <!-- ═══ TESTIMONIAL (per-issue, photo on left) ══════ -->
+  <div class="testimonial" style="display: block;">
+    <div class="testimonial-rule"></div>
+    <div class="testimonial-content">
+      <div class="testimonial-photo"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/06-june/2026-06-22/assets/images/lily-headshot.jpg" alt="Lily Rouhani"></div>
+      <div class="testimonial-body">
+        <p class="testimonial-quote">Such a fun shoot day! Thank you for making it so easy and enjoyable.</p>
+        <div class="testimonial-attribution"><strong>Lily Rouhani</strong> · KW Southwest REALTOR®</div>
+        <div class="testimonial-cta"><a href="https://www.instagram.com/p/DZyAZ0ykx3Y/?img_index=1" target="_blank" rel="noopener">See the Instagram Post</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ GOOGLE REVIEWS (permanent trust strip) ═════ -->
+  <a href="https://www.google.com/search?q=agent+marketing+desk" style="display:block; text-decoration:none;" target="_blank" rel="noopener">
+    <div class="reviews-strip">
+      <div class="reviews-strip-line">
+        <img src="https://img.icons8.com/color/96/google-logo.png" alt="Google" class="reviews-google-icon">
+        <span class="rating">4.9</span>
+        <span class="stars">★★★★★</span>
+        <span class="label">on Google</span>
+      </div>
+      <span class="meta">51 reviews <span class="cta">Read them all</span></span>
+    </div>
+  </a>
+
+  <!-- ═══ FROM THE BLOG (per-issue article reference) ══ -->
+  <div class="blog-feature" style="display: block;">
+    <span class="eyebrow">From the Blog</span>
+    <div class="blog-feature-image"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/2026/05-may/2026-05-28/assets/images/luxury-newsletters.gif" alt="We launched monthly luxury newsletters for two brokerages"></div>
+    <h2>We launched monthly luxury newsletters for two brokerages</h2>
+    <p>Agent Marketing Desk now produces monthly luxury newsletters for two brokerages in Houston, featuring properties priced at $1 million and above with direct links to each listing.</p>
+    <a href="https://agentmarketingdesk.com/blogs/news/we-just-launched-monthly-luxury-newsletters-for-brokerages" class="btn btn-red" target="_blank" rel="noopener">Read the Blog Post</a>
+  </div>
+
+  <!-- ═══ PRODUCTS (generated dynamically) ════════════ -->
+  
+
+  <!-- (Standalone pricing block removed; pricing now lives inside the Open House Signs section.) -->
+
+  <!-- ═══ MARKETING OFFICE HOUR (permanent, from config) ═ -->
+  <div class="moh">
+    <div class="moh-image"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/fixtures/marketing-office-hour.jpg" alt="Marketing Office Hour"></div>
+    <span class="moh-eyebrow">Recurring Weekly</span>
+    <div class="moh-title">Marketing Office Hour</div>
+    <div class="moh-tagline">Every Monday · 12:00 – 1:00 PM · Zoom</div>
+    <div class="moh-intro">Drop in for help with Social Media, AI tools, signs, Canva, automations, print marketing, direct mail and any other marketing question. Stay 5 minutes or the full hour.</div>
+    <div class="moh-host">Hosted by Greg St. Fort</div>
+    <a href="https://pages.agentmarketingdesk.com/getstarted" class="btn btn-red" target="_blank" rel="noopener">Get the Zoom Link</a>
+  </div>
+
+  <!-- ═══ OPEN HOUSE SIGNS (permanent, from config) ══ -->
+  <div class="ohs">
+    <div class="ohs-title">Open House Signs</div>
+    <div class="ohs-tagline">by Agent Marketing Desk</div>
+    <div class="ohs-grid"><a href="https://agentmarketingdesk.com/collections/open-house-signs" style="display:block; text-decoration:none;" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/products/open-house-signs/example-1.png" alt="Open House sign example" style="display:block; width:100%; height:auto;"></a><a href="https://agentmarketingdesk.com/collections/open-house-signs" style="display:block; text-decoration:none;" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/products/open-house-signs/example-2.jpg" alt="Open House sign example" style="display:block; width:100%; height:auto;"></a></div>
+    <div class="ohs-desc">We design and print your custom open house signs. Free shipping on every order.</div>
+    <div class="ohs-pricing">
+      <div class="ohs-pricing-title">Order More & Save</div>
+      
+      <div class="ohs-pricing-row"><span class="ohs-pricing-tier">Buy 1–2 signs</span><span class="ohs-pricing-price">$25.00 each</span></div>
+      <div class="ohs-pricing-row"><span class="ohs-pricing-tier">Buy 3–4 signs</span><span class="ohs-pricing-price">$16.00 each</span></div>
+      <div class="ohs-pricing-row"><span class="ohs-pricing-tier">Buy 5–9 signs</span><span class="ohs-pricing-price">$13.00 each</span></div>
+      <div class="ohs-pricing-row"><span class="ohs-pricing-tier">Buy 10–29 signs</span><span class="ohs-pricing-price">$11.50 each</span></div>
+      <div class="ohs-pricing-row"><span class="ohs-pricing-tier">Buy 30–99 signs</span><span class="ohs-pricing-price">$10.50 each</span></div>
+    </div>
+    <a href="https://agentmarketingdesk.com/collections/open-house-signs" class="btn btn-red" target="_blank" rel="noopener">Order Now</a>
+  </div>
+
+  <!-- ═══ TEAM (from config.team) ═════════════════════ -->
+  <div class="team-section">
+    <h2 style="font-size: 22px; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; color: #111111; margin-bottom: 28px;">Meet Your Marketing Team</h2>
+    <div class="team-grid">
+    <div class="team-card">
+      <div class="team-avatar"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/team/greg.jpg" alt="Greg St. Fort"></div>
+      <div class="team-name">Greg St. Fort</div>
+      <div class="team-role">Founder & Director</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/team/millie.jpg" alt="Millie Wachira"></div>
+      <div class="team-name">Millie Wachira</div>
+      <div class="team-role">Client Director</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/team/shameka.jpg" alt="Shameka Taylor"></div>
+      <div class="team-name">Shameka Taylor</div>
+      <div class="team-role">Client Success Coordinator</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/team/carmella.jpg" alt="Carmella Cajipe"></div>
+      <div class="team-name">Carmella Cajipe</div>
+      <div class="team-role">Digital Marketing Specialist</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/team/olive.jpg" alt="Olive Wachira"></div>
+      <div class="team-name">Olive Wachira</div>
+      <div class="team-role">Listing Marketing Coordinator</div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/team/Azalea_1.webp" alt="Azalea Bicera"></div>
+      <div class="team-name">Azalea Bicera</div>
+      <div class="team-role">Digital Marketing Specialist</div>
+    </div></div>
+    <div style="margin-top: 32px;">
+      <a href="https://agentmarketingdesk.com/pages/about-us" class="btn btn-black" target="_blank" rel="noopener">More About Us</a>
+    </div>
+  </div>
+
+  <!-- ═══ RESOURCE LIBRARY (from config.resources) ════ -->
+  <div class="resources">
+    <div class="resources-head">
+      <span class="eyebrow">Resource Library</span>
+    </div>
+    <div class="resource-cols">
+      <a href="https://pages.agentmarketingdesk.com/getstarted" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">Weekly Marketing Office Hour</span><span class="resource-arrow">›</span></a>
+      <a href="https://agentmarketingdesk.com/blogs/news" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">AMD Blog</span><span class="resource-arrow">›</span></a>
+      <a href="https://design.agentmarketingdesk.com" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">Canva Template Library & Tutorials</span><span class="resource-arrow">›</span></a>
+      <a href="https://youtube.com/@AgentMarketingSchool" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">Agent Marketing School (YouTube)</span><span class="resource-arrow">›</span></a>
+      <a href="https://youtube.com/@agentmarketingdesk" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">Agent Marketing Desk (YouTube)</span><span class="resource-arrow">›</span></a>
+      <a href="https://pages.agentmarketingdesk.com/sessions" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">Agent Marketing Sessions (Monthly)</span><span class="resource-arrow">›</span></a>
+      <a href="https://agentmarketingdesk.com/collections/open-house-signs" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">Open House Signs</span><span class="resource-arrow">›</span></a>
+      <a href="https://agentmarketingdesk.com/collections/signs" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">For Sale Signs</span><span class="resource-arrow">›</span></a>
+      <a href="https://pages.agentmarketingdesk.com/Videos-by-Agent-Marketing-Desk-188be92991c180669dc3d645b1504a84" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">Video Services</span><span class="resource-arrow">›</span></a>
+      <a href="https://allagents.agentmarketingdesk.com/" class="resource-item" target="_blank" rel="noopener"><span class="resource-label">Listing Marketing for Partner Brokerages</span><span class="resource-arrow">›</span></a></div>
+  </div>
+
+  <!-- ═══ SOCIAL ═══════════════════════════════════════ -->
+  <div class="social">
+    <div class="social-label">Follow Agent Marketing Desk</div>
+    <div class="social-icons">
+      <a href="https://instagram.com/agentmarketingdesk" aria-label="Instagram" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/72/B40101/instagram-new.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/agentmarketingdesk" aria-label="Facebook" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/72/B40101/facebook-new.png" alt="Facebook"></a>
+      <a href="https://youtube.com/@agentmarketingdesk" aria-label="YouTube" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/72/B40101/youtube-play.png" alt="YouTube"></a>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════ -->
+  <div class="ftr">
+    <div class="ftr-logo"><a href="https://agentmarketingdesk.com" style="display:inline-block; text-decoration:none;" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/assets/brand/logo-horizontal.png" alt="Agent Marketing Desk"></a></div>
+    <div class="ftr-tag">Your Marketing Team</div>
+    <div class="ftr-contact">
+      1650 Highway 6 Suite 350 Sugar Land, TX 77478<br>
+      832-981-3909 · <a href="mailto:team@agentmarketingdesk.com" target="_blank" rel="noopener">team@agentmarketingdesk.com</a>
+    </div>
+    <hr class="ftr-divider">
+    <div class="ftr-legal">
+      You're receiving this because you're part of the Agent Marketing Desk community.<br>
+      <a href="{{ unsubscribe }}">Unsubscribe</a> · <a href="https://agentmarketingdesk.com" target="_blank" rel="noopener">https://agentmarketingdesk.com</a>
+    </div>
+  </div>
+
+</div><!-- /container -->
+</div><!-- /wrap -->
+</body>
+</html>
