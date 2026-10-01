@@ -1,6 +1,18 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/2026-10-02",
+      "destination": "/2026-10-01",
+      "permanent": false
+    },
+    {
+      "source": "/issues/2026-10-02",
+      "destination": "/issues/2026-10-01",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/:date(\\d{4}-\\d{2}-\\d{2})",
