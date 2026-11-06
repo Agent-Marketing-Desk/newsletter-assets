@@ -27,7 +27,12 @@ assets/
 - `/` — landing page
 - `/YYYY-MM-DD` — that week's issue (rewritten internally to `/issues/YYYY-MM-DD.html`)
 
-Each rendered HTML loads its images from `raw.githubusercontent.com/.../2026/MM-month/YYYY-MM-DD/assets/images/*` so the email version works regardless of whether the Vercel site is up.
+Image and media URLs in newsletter HTML should use `https://newsletter.brokermarketingdesk.com/<path>`, with the same file paths as in this repo. Examples:
+
+- `https://newsletter.brokermarketingdesk.com/assets/brand/logo-horizontal.png`
+- `https://newsletter.brokermarketingdesk.com/2026/MM-month/YYYY-MM-DD/assets/images/og.png`
+
+Already-sent emails still point at the old `raw.githubusercontent.com/Agent-Marketing-Desk/newsletter-assets/main/...` URLs, so this repo should stay public until Gregory decides otherwise.
 
 ## License
 
